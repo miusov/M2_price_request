@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Main config of module
+ *
+ * @category    Extensions
+ * @package     AM_PriceRequest
+ * @author      Artem Miusov <miusov86@gmail.com>
+ * @copyright   2018 ​ Artem Miusov
+ * @license     http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="AM_PriceRequest::manage" title="Price Request" module="AM_PriceRequest"
+             translate="title" sortOrder="100" resource="AM_PriceRequest::requests"
+             action="am_pricerequest/requests" parent="Magento_Customer::customer" />
+    </menu>
+
+</config>
